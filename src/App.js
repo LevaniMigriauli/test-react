@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/common/Header";
 import Wrapper from "./components/common/Wrapper";
 import MiddleSection from "./components/common/MiddleSection";
+import Footer from "./components/common/Footer";
 
 function App() {
   // const [color, setColor] = useState("red");
@@ -18,17 +19,20 @@ function App() {
   // }
   const burgers = [
     {
-      img: "../../public/images/238e287aa4d92d6e0cc4783e397b6e7386cd2e47-1333x1333.webp",
+      img: "../public/images/1.webp",
+      alt: "burger 1",
       burgerName: "Whoper Melt",
       calorage: "604 cal",
     },
     {
-      img: "../../public/images/238e287aa4d92d6e0cc4783e397b6e7386cd2e47-1333x1333.webp",
+      img: "../../public/images/2.webp",
+      alt: "burger 2",
       burgerName: "Whoper",
       calorage: "677 cal",
     },
     {
-      img: "../../public/images/238e287aa4d92d6e0cc4783e397b6e7386cd2e47-1333x1333.webp",
+      img: "../../public/images/3.webp",
+      alt: "burger 3",
       burgerName: "Double Whoper",
       calorage: "604 cal",
     },
@@ -50,6 +54,7 @@ function App() {
     <Wrapper>
       <Header />
       <MiddleSection items={burgers} />
+      <Footer />
     </Wrapper>
   );
 }

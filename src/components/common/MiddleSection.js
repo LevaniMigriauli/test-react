@@ -6,6 +6,7 @@ const MiddleSection = (props) => {
     <section className="section-products">
       <BurgerItem
         img={props.items[0].img}
+        alt={props.items[0].alt}
         title={props.items[0].burgerName}
         calorage={props.items[0].calorage}
       />
